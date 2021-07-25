@@ -1,0 +1,1041 @@
+/********** ESTILOS GENERALES **********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/********** ESTILOS HOME **********/
+header {
+    width: 100%;
+    background: #f9f9f9;
+    border-top: 8px solid #41b5d7;
+}
+
+.menu-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.ui-menu {
+    width: 150px;
+}
+
+#menu {
+    position: absolute;
+    padding: 5px;
+    background: #085bd8;
+    border: none;
+}
+
+#menu li  {
+    background: #085bd8;
+    border: none;
+    padding: 2px;
+}
+
+#menu a {
+    color: white;
+}
+
+.menu-superior input {
+    width: 250px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+    outline: none;
+    font-size: 18px;
+}
+
+.menu-icons {
+    display: flex;
+    align-items: center;
+}
+
+.fa-search {
+    position: relative;
+    right: 26px;
+    color: #0779be;
+}
+
+.fa-shopping-cart,
+.fa-user {
+    font-size: 24px;
+    color: #085bd8;
+    cursor: pointer;
+}
+
+.fa-shopping-cart:hover,
+.fa-user:hover {
+    color: #41b5d7;
+    transform: scale(1.2);
+    transition: all 0.15s ease-in-out;
+}
+
+.menu-inferior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    background-color: #303030;
+}
+
+/* Menú Hamburguesa */
+
+header label {
+    display: none;
+    padding: 6px;
+    margin-right: 5px;
+    box-sizing: unset;
+    color: white;
+    font-size: 24px;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label:hover {
+    cursor: pointer;
+    color: #fed909;
+}
+
+/* Menú Hamburguesa */
+
+header nav ul {
+    display: flex;
+}
+
+header nav a {
+    padding: 14px;
+    margin-right: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+header nav a:hover {
+    color: #fed909;
+    transition: all 0.3s;
+}
+
+.activo {
+    color: #fed909;
+    border-left: 1px solid #fed909;
+    border-right: 1px solid #fed909;
+}
+
+.activo-icon {
+    color: orangered;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+    padding: 50px;
+    background-image: url("../img/banner_home.jpg");
+    background-size: cover;
+    background-position: top center;
+    text-align: right;
+}
+
+.banner-titulo {
+    font-size: 34px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(65, 65, 65);
+}
+
+.banner-boton {
+    width: 180px;
+    height: 45px;
+    margin-top: 14px;
+    background: #085bd8;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.banner button {
+    transition: all 0.2s ease;
+}
+
+.banner button:hover {
+    transform: scale(1.1);
+}
+
+.banner-boton:active {
+    background: #085bd8;
+    box-shadow: none;
+}
+
+.nosotros,
+.sucursales {
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 30px;
+    color: #303030;
+}
+
+.nosotros-articulo,
+.sucursales-articulo {
+    width: 50%;
+    line-height: 22px;
+}
+
+.nosotros-articulo h1,
+.sucursales-articulo h2,
+hr {
+    margin-bottom: 10px;
+}
+
+.nosotros div:last-child {
+    background-image: url("../img/nosotros_foto.png");
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    width: 40%;
+}
+
+.banner-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    color: white;
+    font-size: 28px;
+    background-image: url("../img/banner_productos.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-productos h2 {
+    width: 450px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 80px 0;
+    background: #41b5d7;
+}
+
+.producto-card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    height: 250px;
+    margin-bottom: 20px;
+    color: white;
+    background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+    border: 5px solid #dacfbf;
+}
+
+.producto-card:hover {
+    box-shadow: none;
+    transition: all 0.7s ease;
+}
+
+.producto-card h2 {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.producto-card img {
+    width: 100%;
+}
+
+.mask {
+    overflow: hidden;
+}
+
+.mask img {
+    transition: all 0.4s ease;
+}
+
+.mask:hover img {
+    transform: scale(1.2);
+}
+
+.sucursales div:last-child {
+    width: 40%;
+    height: 400px;
+}
+
+.sucursales-articulo:first-child {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.sucursales-articulo p {
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.sucursales-articulo .fas {
+    color: #085bd8;
+    font-size: 16px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+    background: #085bd8;
+    color: white;
+    border-top: 8px solid #41b5d7;
+}
+
+footer h3 {
+    color: #fed909;
+    margin-bottom: 10px;
+}
+
+.articulo-footer img {
+    width: 190px;
+}
+
+.articulo-footer:first-child {
+    align-self: center;
+}
+
+.articulo-footer a {
+    color: white;
+    line-height: 26px;
+}
+
+.articulo-footer a:hover {
+    color: #fed909;
+    text-decoration: underline;
+}
+
+/********** ESTILOS AGREGAR CLIENTE **********/
+
+.agregar-clientes {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    padding: 60px 0;
+    background: #41b5d7;
+    color: white;
+}
+
+.articulo-clientes {
+    width: 40%;
+    height: auto;
+}
+
+.articulo-clientes h2 {
+    margin-bottom: 20px;
+}
+
+.articulo-clientes:first-child {
+    background-image: url("../img/clientes-lateral.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulario input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 36px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.formulario input:last-child {
+    width: 50%;
+    margin: 0 auto;
+    background: #085bd8;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.formulario input:last-child:hover {
+    width: 53%;
+    transform: scale(1.05);
+}
+
+/********** ESTILOS AGREGAR VENTA **********/
+
+.articulo-ventas {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 400px;
+    background-image: url("../img/ingreso_ventas.jpeg");
+    background-size: cover;
+}
+
+.formulario-ventas,
+.formulario-factura {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulario-ventas input,
+#venta,
+#producto,
+.formulario-factura input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 36px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+.formulario-ventas input:last-child,
+.formulario-ventas input:nth-child(4),
+.formulario-factura input:last-child {
+    width: 70%;
+    margin: 0 auto 30px;
+    background: #085bd8;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.formulario-ventas input:nth-child(4):hover,
+.formulario-ventas input:nth-child(5):hover {
+    width: 73%;
+    transform: scale(1.05);
+}
+#errores {
+    margin-bottom: 6px;
+}
+
+#errores p {
+    font-size: 14px;
+    color: purple;
+}
+
+/********** ESTILOS LISTAR VENTAS **********/
+
+.banner-listar-ventas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 50px;
+    background-image: url("../img/banner_listar_ventas.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    text-align: center;
+}
+#listado-ventas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 0;
+}
+
+#listado-ventas h2 {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th {
+    padding: 10px 20px;
+    background-color: #085bd8;
+    color: white;
+    border: 1px solid lightblue;
+}
+
+table td {
+    padding: 10px 0;
+    border: 1px solid lightsteelblue;
+}
+
+tr:nth-child(even) {
+    background-color: #ebebeb;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+.fa-edit,
+.fa-trash-alt {
+    padding: 0 3px;
+    color: #085bd8;
+    cursor: pointer;
+}
+
+.fa-edit:hover,
+.fa-trash-alt:hover {
+    color: #41b5d7;
+    transform: scale(1.25);
+    transition: all 0.2s ease-in-out;
+}
+
+/********** ESTILOS INGRESO **********/
+
+.inicio-sesion {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 80px - 190px);
+}
+
+.sesion:first-child {
+    background-image: url("../img/inicio_sesion.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.sesion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 40px;
+}
+.sesion img {
+    width: 260px;
+}
+
+.sesion input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.sesion h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.sesion button,
+#secciones button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    padding: 8px;
+    margin: 20px auto 40px;
+    background: #085bd8;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sesion button:hover,
+#secciones button:hover {
+    width: 220px;
+    transform: scale(1.05);
+}
+
+.sesion form p {
+    text-align: center;
+}
+
+.sesion form a {
+    font-weight: 600;
+    color: #085bd8;
+    transition: all 0.2s ease;
+}
+
+.sesion form a:hover {
+    text-decoration: underline;
+    color: #41b5d7;
+}
+
+/********** ESTILOS DESPLEGAR SECCIONES **********/
+
+#secciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+#secciones span {
+    width: 100%;
+}
+
+.secciones-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+    height: 200px;
+    background: #0779be;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.secciones-sec:hover {
+    background: #41b5d7;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+/********** ESTILOS CREAR PRODUCTOS **********/
+
+.input-error {
+    background-color: tomato;
+    border: 2px solid #eaee9d !important;
+    border-style: dashed !important;
+    color: white;
+}
+
+/********** ESTILOS LISTADO CATEGORÍAS  **********/
+
+.listado-categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 60px 0;
+    background: #085bd8;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.container-dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.container-dialog button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    padding: 8px;
+    margin: 20px auto 40px;
+    background: #085bd8;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.container-dialog button:hover {
+    width: 220px;
+    transform: scale(1.05);
+}
+
+#dialog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 24px;
+}
+
+.dialog-card {
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+#acordeon {
+    width: 70%;
+}
+
+.ui-dialog-titlebar {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background: #085bd8;
+}
+
+/********** ESTILOS DETALLE VENTAS **********/
+
+#detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 350px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#detalle h2 {
+    margin-bottom: 20px;
+}
+
+.place::-webkit-input-placeholder {
+    color: white;
+}
+
+.input-color {
+    background: rebeccapurple;
+    color: white;
+}
+
+.formulario-factura input {
+    margin-bottom: 20px;
+}
+
+#formulario label {
+    position: relative;
+    bottom: 18px;
+    color: rgb(255, 247, 0);
+}
+
+/********** ESTILOS RESPONSIVIDAD **********/
+
+@media screen and (max-width: 880px) {
+    .banner,
+    .banner-listar-ventas {
+        height: 300px;
+    }
+
+    .banner-titulo {
+        font-size: 26px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .sucursales-articulo p {
+        font-size: 14px;
+    }
+
+    .sesion {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-superior input,
+    .menu-superior i.fa-search {
+        display: none;
+    }
+
+    .menu-icons a {
+        padding: 5px;
+        margin: 0 0 0 5px;
+    }
+
+    header label {
+        display: block;
+        background: #303030;
+        margin: 0;
+        text-align: center;
+    }
+
+    .menu-inferior {
+        width: 100%;
+        position: absolute;
+        margin-left: -100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu-inferior,
+    .menu-inferior ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 33px;
+        background: #303030;
+    }
+
+    .menu-inferior li {
+        width: 100%;
+        padding: 14px;
+        text-align: center;
+        border-top: 1px solid rgb(120, 120, 120);
+    }
+
+    #btn-menu:checked ~ .menu-inferior {
+        margin-left: 0;
+    }
+
+    .nosotros {
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    .nosotros div:first-child {
+        padding: 40px 40px;
+        width: 70%;
+    }
+
+    .nosotros div:last-child {
+        padding: 0;
+        width: 30%;
+    }
+
+    .banner-productos {
+        height: 260px;
+    }
+
+    .banner-productos h2 {
+        width: 100%;
+        line-height: 80px;
+        font-size: 34px;
+    }
+
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 50px 10px 40px;
+    }
+
+    .producto-card {
+        width: 45%;
+    }
+
+    .sucursales {
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .sucursales-articulo {
+        width: 100%;
+    }
+
+    .sucursales-articulo:first-child {
+        order: 2;
+    }
+
+    .sucursales div:last-child {
+        width: 100%;
+        height: 260px;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .sucursales hr {
+        margin: 0 auto;
+        width: 320px;
+    }
+
+    .sucursales-articulo iframe {
+        height: 250px;
+    }
+
+    footer {
+        height: 300px;
+        padding: 10px;
+    }
+
+    .articulo-footer:first-child {
+        display: flex;
+        justify-content: center;
+        width: 800px;
+        margin-bottom: 20px;
+    }
+
+    .agregar-clientes {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    .articulo-clientes,
+    .articulo-ventas {
+        width: 100%;
+    }
+
+    .articulo-clientes:first-child,
+    .articulo-ventas {
+        height: 320px;
+        background-position: bottom center;
+    }
+
+    .articulo-clientes:last-child {
+        padding: 40px;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .sesion {
+        width: 100%;
+    }
+
+    .sesion:first-child {
+        height: 220px;
+    }
+
+    #limpiar-formulario,
+    #ingresar-venta {
+        width: 100%;
+    }
+
+    .secciones-sec {
+        width: 46%;
+        margin-bottom: 20px;
+    }
+
+    #acordeon {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nosotros div:first-child {
+        padding: 40px;
+        width: 90%;
+    }
+
+    .nosotros div:last-child {
+        padding: 0;
+        width: 30%;
+    }
+
+    .articulo-clientes:first-child,
+    .articulo-ventas {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .banner,
+    .banner-listar-ventas,
+    .sesion:first-child,
+    .articulo-ventas {
+        height: 200px;
+        padding: 20px 20px;
+    }
+
+    .banner h1 {
+        font-size: 21px;
+    }
+
+    .nosotros div:first-child {
+        padding: 40px 40px;
+        width: 100%;
+    }
+
+    .nosotros div:last-child {
+        display: none;
+    }
+
+    .banner-productos {
+        height: 200px;
+    }
+
+    .producto-card {
+        width: 90%;
+    }
+
+    footer {
+        height: 450px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .articulo-footer {
+        margin: 20px 0;
+    }
+
+    .articulo-clientes:first-child {
+        height: 25vh;
+    }
+
+    .articulo-clientes:last-child {
+        height: auto;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    #listado-ventas {
+        padding: 60px 0;
+        font-size: 14px;
+    }
+
+    table th {
+        padding: 6px;
+    }
+
+    table td {
+        padding: 6px;
+    }
+
+    .secciones-sec {
+        width: 90%;
+    }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <title>VENTAS</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="menu-superior">
+            <img src="img/suplestore_logo_H.png" alt="">
+            <div class="menu-icons">
+                <input type="text"><i class="fas fa-search"></i>
+                <a href="ingreso.html"><i class="fas fa-user"></i></a>
+                <a href="agregar_venta.html"><i class="fas fa-shopping-cart activo-icon"></i></a>
+            </div>
+        </nav>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">
+            <i class="fas fa-bars"></i>
+        </label>
+        <nav class="menu-inferior">
+            <ul>
+                <li><a href="negocio.html">HOME</a></li>
+                <li><a href="agregar_cliente.html">AÑADIR CLIENTE</a></li>
+                <li><a href="listar_ventas.html">VENTAS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Formulario Ventas -->
+        <section class="agregar-clientes">
+            <article class="articulo-ventas">
+                <!-- Se añade imagen por css -->
+            </article>
+            <article class="articulo-clientes">
+                <div id="errores">
+                </div>
+                <h2>Ingreso de Ventas</h2>
+                <form class="formulario-ventas">
+                    <input type="number" placeholder="ID Venta" id="id-venta" required>
+                    <input type="text" placeholder="Vendedor" id="vendedor" required>
+                    <input type="number" placeholder="Cantidad Artículos" id="articulos" required>
+                    <input type="submit" value="Limpiar Formulario" id="limpiar-formulario">
+                    <input type="submit" value="Ingresar Venta" id="ingresar-venta">
+                </form>
+            </article>
+        </section>
+        <!-- Ubicación y Sucursales -->
+        <article class="sucursales">
+            <div class="sucursales-articulo">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.6802196087165!2d-70.62038258480112!3d-33.43158048077932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7ce4180f6d%3A0xee962b0c164b8e3!2sAv.%20Manuel%20Montt%20350%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1626384600343!5m2!1ses-419!2scl"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="sucursales-articulo">
+                <h2>UBICACIÓN Y SUCURSALES</h2>
+                <hr>
+                <p><i class="fas fa-map-marker-alt"></i><strong> Providencia :</strong> Avenida Manuel Montt 350
+                </p>
+                <p><i class="fas fa-phone-alt"></i><strong> Teléfono :</strong> 22356788
+                </p><br>
+                <p><i class="fas fa-map-marker-alt"></i><strong> Santiago Centro:</strong> Agustinas 774,
+                    oficina 1012
+                </p>
+                <p><i class="fas fa-phone-alt"></i><strong> Teléfono :</strong> 223556791
+                </p>
+            </div>
+        </article>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <article class="articulo-footer">
+            <img src="img/suplestore_logo_H_White.png" alt="suplestore logotipo blanco">
+        </article>
+        <article class="articulo-footer">
+            <h3>SUCURSALES</h3>
+            <P><strong>Providencia : </strong>Avenida Manuel Montt 350</P>
+            <P><strong>Teléfono : </strong> 22356788</P><br>
+            <P><strong>Providencia : </strong>Avenida Manuel Montt 350</P>
+            <P><strong>Teléfono : </strong> 22356788</P>
+        </article>
+        <article class="articulo-footer">
+            <h3>LINKS DE INTERÉS</h3>
+            <ul>
+                <li><i class="fas fa-link"></i>
+                    <a
+                        href="https://allnutrition.cl/blogs/nutriblog/que-es-y-para-que-sirve-una-proteina-whey?utm_medium=ppc&utm_source=adwords&utm_term=&utm_campaign=3.0+DSA+-+Search+-+CL&hsa_mt=b&hsa_grp=75815950309&hsa_tgt=dsa-19959388920&hsa_cam=2065188422&hsa_acc=5826141355&hsa_ver=3&hsa_src=g&hsa_kw=&hsa_net=adwords&hsa_ad=366749274678&gclid=Cj0KCQjwraqHBhDsARIsAKuGZeH3FZXRcK5XrToddscGFcSicgTPRl6NN_g8WYfRkKNkIuKG6i9VCkwaAjf4EALw_wcB">Beneficios
+                        de la proteína whey</a>
+                </li>
+                <li><i class="fas fa-link"></i>
+                    <a
+                        href="https://allnutrition.cl/blogs/nutriblog/que-es-la-creatina?utm_medium=ppc&utm_source=adwords&utm_term=&utm_campaign=3.0+DSA+-+Search+-+CL&hsa_mt=b&hsa_grp=75815950309&hsa_tgt=dsa-19959388920&hsa_cam=2065188422&hsa_acc=5826141355&hsa_ver=3&hsa_src=g&hsa_kw=&hsa_net=adwords&hsa_ad=366749274678&gclid=Cj0KCQjwraqHBhDsARIsAKuGZeFcbNfWouPn6BWkNSdcCIYxK5qET2yyUiRZtxjESR2Q4O0AmmJuT1waAr6-EALw_wcB">¿Qué
+                        es la creatina?</a>
+                </li>
+                <li><i class="fas fa-link"></i>
+                    <a href="https://selectos.eu/es/mejor-pre-workout/">Los mejores Pre-Workout</a>
+                </li>
+            </ul>
+        </article>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+        // Declaración de variables
+        let btnLimpiarFormulario = document.getElementById('limpiar-formulario');
+        let btnIngresarVenta = document.getElementById('ingresar-venta');
+        let inputIdVenta = document.getElementById('id-venta');
+        let inputVendedor = document.getElementById('vendedor');
+        let inputCantidadArticulos = document.getElementById('articulos');
+        let mostrarErrores = document.getElementById('errores');
+
+        // Función para limìar formulario
+        btnLimpiarFormulario.addEventListener('click', function () {
+            inputIdVenta.value = '';
+            inputVendedor.value = '';
+            inputCantidadArticulos.value = '';
+            event.preventDefault();
+        });
+
+        // Función campos obligatorios y validaciones
+        btnIngresarVenta.addEventListener('click', function () {
+            mostrarErrores.innerHTML = ''; //Acá evitamos se dupliquen los avisos de error 
+            // Validar campo vacío input ID Venta
+            if (inputIdVenta.value === '') {
+                let elemento = document.createElement('p');
+                elemento.innerHTML = '*El campo "ID Venta" es obligatorio';
+                mostrarErrores.appendChild(elemento);
+            // Validar número ID Venta entre 1 y 1000
+            } else if (inputIdVenta.value <= 0  || inputIdVenta.value > 1000) {
+                let elemento = document.createElement('p');
+                elemento.innerHTML = '*Debes ingresar un ID Venta entre 1 y 1000';
+                mostrarErrores.appendChild(elemento);
+                event.preventDefault();
+            // Validar campo vacío input Vendedor
+            } else if (inputVendedor.value === '') {
+                let elemento = document.createElement('p');
+                elemento.innerHTML = '*El campo "Vendedor" es obligatorio';
+                mostrarErrores.appendChild(elemento);
+            // Validar nombre vendedor máximo 50 caracteres
+            } else if ((inputVendedor.value).length > 50) {
+                let elemento = document.createElement('p');
+                elemento.innerHTML = '*Ingresa Vendedor de 50 caracteres máximo';
+                mostrarErrores.appendChild(elemento);
+                event.preventDefault();
+            // Validar campo vacío input cantidad Artículos
+            } else if (inputCantidadArticulos.value === '') {
+                let elemento = document.createElement('p');
+                elemento.innerHTML = '*El campo "Cantidad Artículos" es obligatorio';
+                mostrarErrores.appendChild(elemento);
+            // Validar número Cantidad Artículos entre 1 y 1000
+            } else if (inputCantidadArticulos.value <= 0 || inputCantidadArticulos.value > 1000) {
+                let elemento = document.createElement('p');
+                elemento.innerHTML = '*Debes ingresar número entre 1 y 1000';
+                mostrarErrores.appendChild(elemento);
+                event.preventDefault();
+            } else {
+                alert('Los datos se han ingresado correctamente');
+            }
+        });
+    </script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/8d20d6c8c4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
